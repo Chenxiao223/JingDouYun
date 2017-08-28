@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      >
+
+    </FrameLayout>
+
+<!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#363636"/>-->
+
+    <LinearLayout
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nav_footer_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+    <RadioGroup
+        android:id="@+id/navigation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/sselector_main_btn_home"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="公司"   />
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#585757"/>-->
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:text="产品"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/sselector_main_btn_canping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#585757"/>-->
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:text="互动"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/sselector_main_btn_hudong"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#585757"/>-->
+
+        <RadioButton
+            android:id="@+id/btn4"
+            android:text="标签"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/sselector_main_btn_price"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>

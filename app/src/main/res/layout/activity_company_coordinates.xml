@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海" />
+
+        <EditText
+            android:id="@+id/geocodekey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="祖冲之路887弄-77～78号-5层" />
+
+        <Button
+            android:id="@+id/geocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="地址定位" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31.210844" />
+
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="121.601272" />
+
+        <Button
+            android:id="@+id/reversegeocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="坐标定位" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout>

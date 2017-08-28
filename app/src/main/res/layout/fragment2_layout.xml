@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="产品名称:"
+            android:textSize="18sp"
+            android:textColor="#27b3fd" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_chukudocument"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_weight="9" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="手机壳"
+            android:textSize="18sp"
+            android:textColor="#737373" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="产品型号:"
+            android:textSize="18sp"
+            android:textColor="#27b3fd" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_chukudocument"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_weight="9" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="iPhone6s"
+            android:textSize="18sp"
+            android:textColor="#737373" />
+
+    </LinearLayout>
+
+</LinearLayout>

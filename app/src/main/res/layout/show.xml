@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#fdfdfd"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_showfullcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="全码"
+            android:textColor="#f123"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_showgapline"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#f0f0f0"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_showscantime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="时间"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

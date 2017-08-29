@@ -71,6 +71,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     private int rfid = 0;
     private int scan = 0;
     public static String epc;
+    public static String RSSI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -184,6 +185,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
                 msg.obj = event;
                 msg.what = MSG_SHOW_EPC_INFO;
                 hMsg.sendMessage(msg);
+                RSSI=String.valueOf(event.GetRSSI());
             }
         });
     }
@@ -235,10 +237,10 @@ public class HomeActivity extends Activity implements View.OnClickListener {
 
                             if (rlt2.Success == true) {//上传成功
                                 System.out.println("成功");
-                                Toast.makeText(HomeActivity.this, "上传成功", Toast.LENGTH_SHORT).show();
+                                showInfo("上传成功");
                             } else if (rlt2.Success == false) {//上传失败
                                 System.out.println("失败");
-                                Toast.makeText(HomeActivity.this, "上传失败", Toast.LENGTH_SHORT).show();
+                                showInfo("上传失败");
                             }
                         }
                     } catch (Exception e) {
@@ -251,6 +253,10 @@ public class HomeActivity extends Activity implements View.OnClickListener {
                 }
             }
         }.start();
+    }
+
+    public void showInfo(String msg){
+        Toast.makeText(HomeActivity.this, msg, Toast.LENGTH_SHORT).show();
     }
 
     public void setNodeToSpinnerNode(Setting newset) {
@@ -411,6 +417,8 @@ public class HomeActivity extends Activity implements View.OnClickListener {
         ShowInfo showinfo = new ShowInfo();
         showinfo.setEpc(epc);
         showinfo.setTime(time);
+        showinfo.setPower(setting.getPower());
+        showinfo.setRssi(RSSI);
         showinfo.setUploadFlag(false);
         showInfoList.add(showinfo);
     }
